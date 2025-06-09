@@ -29,6 +29,9 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     packages=find_packages(),
+    package_data={
+        "humanoid_bench": ["assets/**"],
+    },
     include_package_data=True,
     python_requires=">3.7",
     install_requires=core_requirements,
